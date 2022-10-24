@@ -1,0 +1,160 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar .link {
+  color: black;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.navbar .active {
+  color: crimson;
+
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 30vw;
+}
+
+.login-container input {
+  padding: 10px 0;
+}
+
+.login-container button {
+  padding: 10px 0;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0px 30px 30px 30px;
+}
+
+.product {
+  transition: 1s ease-in-out;
+}
+
+.product:hover {
+  transform: scale(1.03);
+
+}
+
+.product-img img {
+  width: 250px;
+  height: 250px;
+}
+
+.product-info {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.ProductDetails {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin: 20px 50px;
+}
+
+.productDetails-right img {
+  width: 400px;
+  height: 400px;
+}
+
+.cart-container {
+  display: flex;
+  margin: 5% 10%;
+}
+
+.cart-items {
+  flex: 1;
+}
+
+.cart-item {
+  display: flex;
+  margin-top: 15px;
+}
+
+.cart-item img {
+  width: 200px;
+  height: 200px;
+}
+
+.cart-item-info {
+  flex: 2;
+  margin-left: 15px;
+}
+
+
+button {
+  background-color: aquamarine;
+  padding: 8px 10px;
+  border: 0;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+button:active {
+  background-color: beige;
+}
+
+.order-container {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 10%;
+}
+
+.orders {
+  display: flex;
+  margin-top: 15px;
+  flex-direction: column;
+}
+
+.order {
+  background-color: aquamarine;
+  margin-top: 20px;
+  padding: 10px;
+  font-weight: 400;
+}
+
+
+.order-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
