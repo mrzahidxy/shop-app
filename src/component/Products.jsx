@@ -2,16 +2,20 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Product from "./Product";
 import { Outlet } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { searchProduct } from "../redux/productSlice";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const dispatch = useDispatch();
 
   const fetchData = async () => {
     const res = await axios.get(
       "https://ecommerce-mern-api.vercel.app/api/products"
     );
     setProducts(res.data);
+    dispatch(searchProduct(res.data))
     setLoading(false);
   };
 

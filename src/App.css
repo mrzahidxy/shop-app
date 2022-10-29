@@ -158,3 +158,31 @@ button:active {
   flex-direction: column;
   margin-left: 15px;
 }
+
+.search-bar input{
+  padding: 7px;
+  border: 0;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.search-content {
+  background-color: aliceblue;
+  width: 70vw;
+  display: flex;
+  gap: 5px;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.search-content img {
+  width: 100px;
+  height: 100px;
+
+}

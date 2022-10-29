@@ -13,6 +13,7 @@ import {
 import Cart from "./component/Cart";
 import { useSelector } from "react-redux";
 import Order from "./component/Order";
+import SearchProduct from "./component/SearchProduct";
 
 function App() {
   const { currentUser } = useSelector((state) => state.user);
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={<Outlet />}>
             <Route path="products" element={<Outlet />}>
               <Route path=":id" element={<ProductDetails />} />
+              <Route path="search" element={<SearchProduct />} />
               <Route index element={<Products />} />
             </Route>
             <Route path="login" element={<Login />} />
